@@ -15,7 +15,10 @@ html, body {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   animation: fadeIn 0.6s ease forwards;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
   position: static;
   top: auto;
@@ -55,7 +58,7 @@ html, body {
 }
 
 .register-container button {
-  width: auto;
+  width: 100%;
   padding: 12px 30px;
   background-color: #f90 !important;
   border: none;

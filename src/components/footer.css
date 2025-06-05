@@ -1,13 +1,14 @@
-div {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+.footer {
+  background-color: #dcedc8; /* pastel green */
   padding: 20px;
-  background-color: #ffffff;
-  color: #888;
-  border-top: 1px solid #eee;
+  text-align: center;
+  border-top: 3px solid #808000; /* olive green */
+  width: 100%;
+  bottom: 0;
   font-size: 14px;
+  color: #556b2f; /* dark olive green */
+  font-weight: 600;
   font-family: 'Amazon Ember', Arial, sans-serif;
   box-sizing: border-box;
+  position: fixed;
 }
