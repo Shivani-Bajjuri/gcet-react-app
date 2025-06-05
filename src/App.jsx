@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Home from './Home.jsx';
 import Product from "./components/Product";
 import Cart from "./components/Cart";
 import Login from "./components/Login";
@@ -21,12 +22,13 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route index element={<Product />} />
-            <Route path="/" element={<Product />}></Route>
-            <Route path="/cart" element={<Cart />}></Route>
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/logout" element={<Logout />}></Route>
-            <Route path="/register" element={<Register />}></Route>
+            <Route index element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/logout" element={<Logout />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
           <Footer />
         </BrowserRouter>
