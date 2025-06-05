@@ -1,20 +1,18 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f7f7f7;
-}
-
-.App {
-  max-width: 600px;
-  margin: 40px auto;
-  background: #fff;
-  padding: 32px 24px;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #F3E5F5; /* Lavender Mist */
+  color: #4A148C; /* Zepto Dark Purple */
+  overflow-x: hidden;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #F3E5F5; /* Lavender Mist */
   padding: 16px 0;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -26,7 +24,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 24px;
-  color: #ff3f6c; /* Myntra pink */
+  color: #8E24AA; /* Medium Zepto Purple */
   font-weight: 700;
 }
 
@@ -34,12 +32,12 @@ header a {
   margin: 0 10px;
   text-decoration: none;
   font-weight: 600;
-  color: #444;
+  color: #6A1B9A; /* Rich Zepto Purple */
   transition: color 0.3s ease;
 }
 
 header a:hover {
-  color: #ff3f6c;
+  color: #D81B60; /* Zepto Pink */
 }
 
 main {
@@ -56,21 +54,21 @@ input[type="text"] {
   max-width: 400px;
   padding: 12px 16px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #BA68C8; /* Soft Purple */
   border-radius: 6px;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 15px;
   transition: border-color 0.3s ease;
 }
 
 input:focus {
   outline: none;
-  border-color: #ff3f6c;
+  border-color: #D81B60; /* Zepto Pink */
 }
 
 button {
-  background-color: #ff3f6c;
-  color: white;
+  background-color: #8E24AA; /* Medium Zepto Purple */
+  color: #ffffff;
   padding: 12px 28px;
   margin-top: 16px;
   border: none;
@@ -82,12 +80,13 @@ button {
 }
 
 button:hover {
-  background-color: #e6325c;
+  background-color: #6A1B9A; /* Rich Zepto Purple */
+  color: #F3E5F5; /* Lavender Mist */
   transform: scale(1.03);
 }
 
 .card {
-  background: white;
+  background: #F8F9FA; /* Very Light Gray */
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
@@ -103,30 +102,32 @@ button:hover {
 }
 
 .card h2 {
-  color: #111;
+  color: #4A148C; /* Zepto Dark Purple */
   font-size: 20px;
   margin-bottom: 8px;
 }
 
 .card p {
   font-size: 16px;
-  color: #555;
+  color: #616161; /* Subtle Gray */
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff;
-  color: #888;
-  border-top: 1px solid #eee;
+  background-color: #F3E5F5; /* Lavender Mist */
+  color: #9E9E9E; /* Muted Gray */
+  border-top: 1px solid #CE93D8; /* Soft Orchid */
   margin-top: 40px;
 }
 
+/* Animations */
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(20px);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -136,8 +137,10 @@ footer {
   from {
     opacity: 0;
     transform: translateX(-20px);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+

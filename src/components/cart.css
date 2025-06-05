@@ -5,13 +5,13 @@
   margin: 30px auto;
   padding: 20px;
   font-family: 'Amazon Ember', Arial, sans-serif;
-  color: #111;
+  color: #3A0CA3; /* Deep Purple */
   animation: fadeIn 0.6s ease forwards;
 }
 
 .cart-heading {
   font-weight: 700;
-  color: #111;
+  color: #3A0CA3; /* Deep Purple */
   margin-bottom: 15px;
   font-size: 1.8rem;
   text-align: center;
@@ -33,19 +33,19 @@
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #9D4EDD; /* Vibrant Purple-Pink */
 }
 
 .cart-empty-message {
   font-size: 1.1rem;
-  color: #555;
+  color: #9D4EDD; /* Vibrant Purple-Pink */
   margin-bottom: 20px;
 }
 
 .cart-add-now-button {
-  background-color: white;
-  border: 2px solid #ff9900;
-  color: #ff9900;
+  background-color: #9D4EDD; /* Vibrant Purple-Pink */
+  border: 2px solid #6A0DAD; /* Dark Purple */
+  color: white;
   font-weight: 700;
   padding: 10px 25px;
   border-radius: 4px;
@@ -56,8 +56,8 @@
 }
 
 .cart-add-now-button:hover {
-  background-color: #e68a00;
-  color: white;
+  background-color: #6A0DAD; /* Dark Purple */
+  color: #E0BBE4; /* Soft Pink Lavender */
 }
 
 /* Animations */
@@ -71,3 +71,4 @@
     transform: translateY(0);
   }
 }
+

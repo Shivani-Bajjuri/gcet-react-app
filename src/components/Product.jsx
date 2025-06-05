@@ -6,11 +6,14 @@ export default function Product({ product }) {
   const { user } = useContext(AppContext);
 
   return (
-    <div className="product-item">
+    <div className="product-box">
+      <img src={product.image} alt={product.name} className="product-img" />
       <h3>{product.name}</h3>
-      <h4>{product.price}$</h4>
-      <button className="buy-button">Add to Cart</button>
-      <button className="buy-now-button">Buy Now</button>
+      <p>Rs.{product.price}</p>
+      <div className="product-buttons">
+        <button className="add-to-cart-btn">Add to Cart</button>
+        <button className="buy-now-btn">Buy Now</button>
+      </div>
     </div>
   );
 }

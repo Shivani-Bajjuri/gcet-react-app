@@ -1,14 +1,21 @@
 .footer {
-  background-color: #dcedc8; /* pastel green */
+  background-color: #7B6D5A; /* Cocoa Taupe */
   padding: 20px;
-  text-align: center;
-  border-top: 3px solid #808000; /* olive green */
   width: 100%;
-  bottom: 0;
-  font-size: 14px;
-  color: #556b2f; /* dark olive green */
+  color: #D8BFD8; /* Soft Orchid */
   font-weight: 600;
+  font-size: 14px;
   font-family: 'Amazon Ember', Arial, sans-serif;
+  border-top: 3px solid #CCCCCC; /* Pewter Silver */
   box-sizing: border-box;
-  position: fixed;
+  margin-top: 40px;
+
+  /* Full centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
+
+

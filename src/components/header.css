@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #ff9900 0%, #f57c00 100%);
+  background-color: #6A1B9A; /* Zepto Rich Purple */
   padding: 15px 30px;
-  box-shadow: 0 4px 8px rgba(255, 153, 0, 0.6);
+  box-shadow: 0 4px 12px rgba(106, 27, 154, 0.6);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -14,8 +14,8 @@
 .header-title {
   font-family: 'Amazon Ember', Arial, sans-serif;
   font-size: 2rem;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  color: #F3E5F5; /* Lavender Mist */
+  text-shadow: none;
   cursor: default;
   user-select: none;
 }
@@ -29,7 +29,7 @@
 }
 
 .header-links li a {
-  color: white;
+  color: #FF80AB; /* Vibrant Pink */
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -40,9 +40,9 @@
 }
 
 .header-links li a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 128, 171, 0.2); /* Pink hover bg */
   transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(255, 128, 171, 0.6);
 }
 
 /* Animations */
@@ -56,3 +56,4 @@
     transform: translateY(0);
   }
 }
+

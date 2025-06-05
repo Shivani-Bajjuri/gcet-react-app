@@ -3,8 +3,8 @@
 div > h2 {
   font-family: 'Amazon Ember', Arial, sans-serif;
   font-weight: 700;
-  color: #111;
-  margin: 30px auto 15px auto;
+  color: #6A1B9A; /* Zepto Purple */
+  margin: 30px auto 30px auto;
   max-width: 1200px;
   animation: fadeIn 0.6s ease forwards;
   text-align: center;
@@ -15,7 +15,7 @@ div > p {
   font-size: 1rem;
   margin: 0 auto 20px auto;
   max-width: 1200px;
-  color: #555;
+  color: #AB47BC; /* Vibrant Zepto Purple-Pink */
   text-align: center;
 }
 

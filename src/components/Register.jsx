@@ -1,42 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { AppContext } from "../App";
-import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
-import './register.css';
+import "./register.css";
 
 export default function Register() {
   const { users, setUsers } = useContext(AppContext);
-  const [user, setUser] = useState({});
-  const [error, setError] = useState(null);
-  const Navigate = useNavigate();
-  const API = import.meta.env.VITE_API_URL;
+  const [user, setUser] = useState({ name: "", email: "", password: "" });
+  const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     if (!user.name || !user.email || !user.password) {
-      setError("Please fill in all fields");
+      alert("Please fill in all fields");
       return;
     }
     try {
-      const url = `${API}/users/register`;
-      await axios.post(url, user);
-      Navigate("/login");
+      const apiUrl = import.meta.env.VITE_API_URL + "/users/register";
+      const res = await axios.post(apiUrl, user);
+
+      setUsers([...users, user]);
+      navigate("/login");
     } catch (err) {
-      setError("Registration failed. Please try again.");
-      console.log(err);
+      alert("Registration failed: " + (err.response?.data?.message || err.message));
     }
   };
 
   return (
     <div className="register-container">
       <h3>Register</h3>
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      <form onSubmit={handleSubmit}>
+      <div className="register-form">
         <p>
           <input
             type="text"
             placeholder="Name"
+            value={user.name}
             onChange={(e) => setUser({ ...user, name: e.target.value })}
           />
         </p>
@@ -44,6 +41,7 @@ export default function Register() {
           <input
             type="text"
             placeholder="Email address"
+            value={user.email}
             onChange={(e) => setUser({ ...user, email: e.target.value })}
           />
         </p>
@@ -51,18 +49,16 @@ export default function Register() {
           <input
             type="password"
             placeholder="New Password"
+            value={user.password}
             onChange={(e) => setUser({ ...user, password: e.target.value })}
           />
         </p>
-        <button type="submit">Submit</button>
-      </form>
+        <button onClick={handleSubmit}>Submit</button>
+      </div>
       <hr />
-      {users &&
-        users.map((value) => (
-          <li key={value.email}>
-            {value.name}-{value.email}-{value.password}
-          </li>
-        ))}
+      <div className="login-link">
+        Already a user? <Link to="/login">Login</Link>
+      </div>
     </div>
   );
 }

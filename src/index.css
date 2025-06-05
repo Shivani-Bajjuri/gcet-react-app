@@ -1,0 +1,11 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #F8F6F4; /* Porcelain */
+  color: #7B6D5A; /* Cocoa Taupe */
+  overflow-x: hidden;
+}
