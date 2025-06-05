@@ -27,9 +27,9 @@ export default function Login() {
   };
 
   return (
-    <div style={{ margin: "30px" }}>
-      <h3>Login</h3>
-      {msg}
+    <div className="login-container">
+      <h3 style={{ textAlign: "center" }}>Login</h3>
+      {msg && <p style={{ textAlign: "center", color: "red" }}>{msg}</p>}
       <p>
         <input
           type="text"
@@ -44,9 +44,11 @@ export default function Login() {
           onChange={(e) => setUser({ ...user, pass: e.target.value })}
         />
       </p>
-      <button onClick={handleSubmit}>Submit</button>
       <p>
-        <button onClick={goToRegister}>Create Account</button>
+        <button className="login-button" onClick={handleSubmit}>Submit</button>
+      </p>
+      <p>
+        <button className="login-button" onClick={goToRegister}>Create Account</button>
       </p>
     </div>
   );

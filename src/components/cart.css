@@ -14,7 +14,7 @@
   color: #111;
   margin-bottom: 15px;
   font-size: 1.8rem;
-  text-align: right;
+  text-align: center;
 }
 
 .cart-empty {
@@ -44,8 +44,8 @@
 
 .cart-add-now-button {
   background-color: white;
-  border: 2px solid #ff3f6c;
-  color: #ff3f6c;
+  border: 2px solid #ff9900;
+  color: #ff9900;
   font-weight: 700;
   padding: 10px 25px;
   border-radius: 4px;
@@ -56,7 +56,7 @@
 }
 
 .cart-add-now-button:hover {
-  background-color: #ff3f6c;
+  background-color: #e68a00;
   color: white;
 }
 
