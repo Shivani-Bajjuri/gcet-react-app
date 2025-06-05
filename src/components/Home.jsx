@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import { AppContext } from "./App";
+import { AppContext } from "../App";
 import axios from "axios";
 import Product from "./Product";
 import "./home.css";
@@ -34,7 +34,7 @@ export default function Home() {
           <p>No products available.</p>
         ) : (
 products.map((product) => (
-  <Product key={product._id.toString()} product={product} />
+  <Product key={product._id ?? product.id ?? product.name} product={product} />
 ))
         )}
       </div>
