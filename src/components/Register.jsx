@@ -27,7 +27,7 @@ export default function Register() {
   };
 
   return (
-    <div style={{ margin: "30px" }}>
+    <div className="register-container">
       <h3>Register</h3>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <form onSubmit={handleSubmit}>
