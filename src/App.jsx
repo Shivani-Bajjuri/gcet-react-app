@@ -20,7 +20,7 @@ function App() {
     <div>
       <AppContext.Provider value={{ users, setUsers, user, setUser }}>
         <BrowserRouter>
-          <Header />
+          {/* Header removed as per user request */}
           <Routes>
             <Route index element={<Home />} />
             <Route path="/" element={<Home />} />

@@ -33,9 +33,9 @@ export default function Home() {
         {products.length === 0 ? (
           <p>No products available.</p>
         ) : (
-          products.map((product) => (
-            <Product key={product._id} product={product} />
-          ))
+products.map((product) => (
+  <Product key={product._id.toString()} product={product} />
+))
         )}
       </div>
     </div>

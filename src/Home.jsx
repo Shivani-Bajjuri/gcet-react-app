@@ -10,7 +10,7 @@ export default function Home() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("https://gcet-node-app-three.vercel.app/products");
+      const res = await axios.get("https://gcet-node-app-three.vercel.app/product/all");
       setProducts(res.data);
     } catch (error) {
       setError("Failed to fetch products");
