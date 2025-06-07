@@ -2,14 +2,19 @@
   max-width: 400px;
   margin: 30px auto;
   padding: 30px;
-  background-color: #fff8dc;
+  background-color: #ffffff; /* White background */
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.2); /* Coral Red shadow */
   font-family: Arial, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.register-container:hover {
+  box-shadow: 0 0 15px rgba(255, 111, 97, 0.4);
 }
 
 .register-container h3 {
-  color: #444;
+  color: #ff6f61; /* Coral Red */
   text-align: center;
   margin-bottom: 20px;
 }
@@ -19,26 +24,28 @@
   width: 100%;
   padding: 8px 10px;
   margin: 8px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #f5a623; /* Bright Orange */
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 .register-container button {
   width: 100%;
-  background-color: #1e90ff;
+  background-color: #4a90e2; /* Bright Blue */
   color: white;
   border: none;
   padding: 10px 0;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
 }
 
 .register-container button:hover {
-  background-color: #0d6efd;
+  background-color: #2563eb; /* Darker Blue */
+  transform: scale(1.05);
 }
 
 .user-list {
@@ -49,5 +56,5 @@
 
 .user-list li {
   padding: 5px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f5a623; /* Bright Orange */
 }

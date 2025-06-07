@@ -1,48 +1,92 @@
 .login-container {
   max-width: 400px;
-  margin: 30px auto;
-  padding: 30px;
-  background-color: #f0f8ff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+  margin: 48px auto 80px auto;
+  background: #ffffff; /* White background */
+  padding: 36px 28px 28px 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(255, 111, 97, 0.2); /* Coral Red shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+  box-shadow: 0 6px 30px rgba(255, 111, 97, 0.4);
 }
 
 .login-container h3 {
-  color: #333;
+  color: #ff6f61; /* Coral Red */
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container p {
+  width: 100%;
+  margin: 18px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login-container input[type="text"],
 .login-container input[type="password"] {
   width: 100%;
-  padding: 8px 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 10px 12px;
+  border: 1px solid #f5a623; /* Bright Orange */
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 6px;
+  background: #fff8f6; /* Light Coral background */
+  transition: border 0.18s;
   box-sizing: border-box;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border: 1.5px solid #4a90e2; /* Bright Blue */
+  outline: none;
+  background: #f0f6ff; /* Light Blue background */
 }
 
 .login-container button {
   width: 100%;
-  background-color: #1e90ff;
-  color: white;
+  background: #4a90e2; /* Bright Blue */
+  color: #ffffff; /* White */
   border: none;
-  padding: 10px 0;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-size: 1.08rem;
   font-weight: 600;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
 }
 
 .login-container button:hover {
-  background-color: #0d6efd;
+  background: #2563eb; /* Darker Blue */
+  transform: scale(1.05);
 }
 
-.login-message {
-  color: red;
+.login-container .register-link {
   text-align: center;
-  margin-bottom: 10px;
+  margin: 16px 0 0 0;
+  width: 100%;
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  color: #333333; /* Dark Gray */
 }

@@ -8,7 +8,7 @@
 .product-box {
     padding: 15px;
     margin: 5px;
-    border: 1px solid gray;
+    border: 1px solid #f5a623; /* Bright Orange */
     width: 220px;
     min-height: 120px;
     box-sizing: border-box;
@@ -16,55 +16,56 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.2); /* Coral Red shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-box h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: #222;
+    color: #333333; /* Dark Gray */
     text-align: center;
 }
 
 .product-box h4 {
     margin: 10px 0;
-    color: #008080;
+    color: #ff6f61; /* Coral Red */
     font-weight: 600;
 }
 
 .product-box button {
-    background-color: #008080;
+    background-color: #4a90e2; /* Bright Blue */
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     width: 100%;
 }
 
 .product-box button:hover {
-    background-color: #0d6efd;
+    background-color: #2563eb; /* Darker Blue */
+    transform: scale(1.05);
 }
 
 .product-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(255, 111, 97, 0.4); /* Coral Red shadow */
 }
 
 .popup {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #1e90ff;
+    background-color: #4a90e2; /* Bright Blue */
     color: white;
     padding: 15px 25px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(30, 144, 255, 0.7);
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.7);
     font-weight: 600;
     z-index: 1000;
     animation: fadein 0.3s, fadeout 0.3s 1.7s;

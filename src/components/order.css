@@ -2,14 +2,19 @@
   max-width: 900px;
   margin: 30px auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #ffffff; /* White background */
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.2); /* Coral Red shadow */
   font-family: Arial, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.order-container:hover {
+  box-shadow: 0 0 15px rgba(255, 111, 97, 0.4);
 }
 
 .order-container h3 {
-  color: #222;
+  color: #333333; /* Dark Gray */
   margin-bottom: 15px;
 }
 
@@ -20,13 +25,13 @@
 
 .order-table th,
 .order-table td {
-  border: 1px solid #ddd;
+  border: 1px solid #f5a623; /* Bright Orange */
   padding: 8px;
   text-align: left;
 }
 
 .order-table th {
-  background-color: #f2f2f2;
+  background-color: #fff8f6; /* Light Coral background */
   font-weight: bold;
 }
 
