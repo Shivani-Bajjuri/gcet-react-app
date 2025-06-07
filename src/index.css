@@ -1,11 +1,96 @@
-html, body, #root {
+/* Styles for Login page */
+.login-body {
+  background-color: #f0f8ff;
+  padding: 40px;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.login-header {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for SignIn page */
+.signin-body {
+  background-color: #fff8dc;
+  padding: 40px;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.signin-header {
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for Header component */
+.header-body {
+  background-color: #008080; /* teal */
+  padding: 20px 40px;
+  color: #e0f2f1; /* pastel teal */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 3px solid #004d40; /* dark teal */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e0f2f1; /* pastel teal */
+  text-shadow: 1px 1px 2px #004d40; /* dark teal shadow */
+}
+
+.header-body ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.header-body ul li a {
+  color: #f0f4e6; /* pastel green */
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.header-body ul li a:hover,
+.header-body ul li a.active {
+  border-bottom: 3px solid #1e90ff; /* blue underline */
+  color: #1e90ff;
+}
+
+/* Global styles */
+body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #F8F6F4; /* Porcelain */
-  color: #7B6D5A; /* Cocoa Taupe */
-  overflow-x: hidden;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

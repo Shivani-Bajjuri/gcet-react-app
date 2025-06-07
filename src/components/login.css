@@ -1,89 +1,48 @@
-/* Base styles */
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Amazon Ember', Arial, sans-serif;
-  background: #FDF9FF; /* light lavender */
-  color: #2B0A3D; /* deep purple */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Login container */
 .login-container {
   max-width: 400px;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 30px;
-  background-color: #FFFFFF;
+  background-color: #f0f8ff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.6s ease forwards;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
-/* Heading */
 .login-container h3 {
+  color: #333;
+  text-align: center;
   margin-bottom: 20px;
-  font-weight: 700;
-  color: #6A1B9A; /* vibrant Zepto purple */
 }
 
-/* Inputs */
 .login-container input[type="text"],
 .login-container input[type="password"] {
   width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  border: 1px solid #BA68C8; /* light purple */
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
-  color: #2B0A3D;
-  transition: border-color 0.3s ease;
   box-sizing: border-box;
 }
 
-/* Focus state */
-.login-container input[type="text"]:focus,
-.login-container input[type="password"]:focus {
-  border-color: #8E24AA; /* Zepto purple */
-  outline: none;
-  box-shadow: 0 0 5px #8E24AA;
-}
-
-/* Button */
-.login-container button,
-.login-container .login-button {
+.login-container button {
   width: 100%;
-  padding: 12px 30px;
-  background-color: #8E24AA; /* Zepto purple */
+  background-color: #1e90ff;
+  color: white;
   border: none;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
+  padding: 10px 0;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: 600;
   transition: background-color 0.3s ease;
-  border-radius: 4px;
+  margin-top: 10px;
 }
 
-.login-container button:hover,
-.login-container .login-button:hover {
-  background-color: #6A1B9A; /* Darker Zepto purple */
+.login-container button:hover {
+  background-color: #0d6efd;
 }
 
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.login-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
 }

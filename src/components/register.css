@@ -1,82 +1,53 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Amazon Ember', Arial, sans-serif;
-  background: #FAF5FF; /* light lavender background */
-  color: #2B0A3D; /* deep purple text */
-}
-
 .register-container {
   max-width: 400px;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 30px;
-  background: #FFFFFF;
+  background-color: #fff8dc;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  animation: fadeIn 0.6s ease forwards;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  text-align: center;
-}
-
-.register-container button {
-  width: 40%;
-  padding: 12px 30px;
-  background-color: #8E24AA; /* Zepto purple */
-  border: none;
-  border-radius: 6px;
-  color: white;
-  font-weight: 700;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px auto;
-}
-
-div[style*="margin: 30px"] button:hover {
-  background-color: #6A1B9A; /* darker purple */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
 .register-container h3 {
-  margin-bottom: 20px;
-  font-weight: 700;
-  color: #6A1B9A; /* Zepto title color */
+  color: #444;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .register-container input[type="text"],
 .register-container input[type="password"] {
   width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  border: 1px solid #CE93D8; /* soft lavender border */
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
-  color: #4A148C; /* deep accent purple */
-  transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
-.register-container input[type="text"]:focus,
-.register-container input[type="password"]:focus {
-  border-color: #AB47BC; /* focus purple */
-  outline: none;
-  box-shadow: 0 0 5px #AB47BC;
+.register-container button {
+  width: 100%;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.register-container button:hover {
+  background-color: #0d6efd;
 }
 
+.user-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}

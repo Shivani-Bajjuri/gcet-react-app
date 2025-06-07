@@ -1,64 +1,60 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { AppContext } from "../App";
-import { useNavigate, Link } from "react-router-dom";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./register.css";
+import "./Register.css";
 
 export default function Register() {
   const { users, setUsers } = useContext(AppContext);
-  const [user, setUser] = useState({ name: "", email: "", password: "" });
-  const navigate = useNavigate();
-
+  const [user, setUser] = useState({});
+  const Navigate = useNavigate();
+  const API = import.meta.env.VITE_API_URL;
   const handleSubmit = async () => {
-    if (!user.name || !user.email || !user.password) {
-      alert("Please fill in all fields");
-      return;
-    }
+    //setUsers([...users, user]);
     try {
-      const apiUrl = import.meta.env.VITE_API_URL + "/users/register";
-      const res = await axios.post(apiUrl, user);
-
-      setUsers([...users, user]);
-      navigate("/login");
+      const url = `${API}/users/register`;
+      await axios.post(url, user);
+      Navigate("/login");
     } catch (err) {
-      alert("Registration failed: " + (err.response?.data?.message || err.message));
+      console.log(err);
     }
   };
-
   return (
     <div className="register-container">
       <h3>Register</h3>
-      <div className="register-form">
-        <p>
-          <input
-            type="text"
-            placeholder="Name"
-            value={user.name}
-            onChange={(e) => setUser({ ...user, name: e.target.value })}
-          />
-        </p>
-        <p>
-          <input
-            type="text"
-            placeholder="Email address"
-            value={user.email}
-            onChange={(e) => setUser({ ...user, email: e.target.value })}
-          />
-        </p>
-        <p>
-          <input
-            type="password"
-            placeholder="New Password"
-            value={user.password}
-            onChange={(e) => setUser({ ...user, password: e.target.value })}
-          />
-        </p>
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
+      <p>
+        <input
+          type="text"
+          placeholder="Name"
+          onChange={(e) => setUser({ ...user, name: e.target.value })}
+        />
+      </p>
+      <p>
+        <input
+          type="text"
+          placeholder="Email address"
+          onChange={(e) => setUser({ ...user, email: e.target.value })}
+        />
+      </p>
+      <p>
+        <input
+          type="password"
+          placeholder="New Password"
+          onChange={(e) => setUser({ ...user, pass: e.target.value })}
+        />
+      </p>
+      <button onClick={handleSubmit}>Submit</button>
       <hr />
-      <div className="login-link">
-        Already a user? <Link to="/login">Login</Link>
-      </div>
+      {users && (
+        <ul className="user-list">
+          {users.map((value) => (
+            <li key={value.email}>
+              {value.name} - {value.email} - {value.pass}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

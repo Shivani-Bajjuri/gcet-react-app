@@ -1,21 +1,13 @@
-.footer {
-  background-color: #7B6D5A; /* Cocoa Taupe */
-  padding: 20px;
-  width: 100%;
-  color: #D8BFD8; /* Soft Orchid */
-  font-weight: 600;
-  font-size: 14px;
-  font-family: 'Amazon Ember', Arial, sans-serif;
-  border-top: 3px solid #CCCCCC; /* Pewter Silver */
-  box-sizing: border-box;
-  margin-top: 40px;
-
-  /* Full centering */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-body {
+  background-color: #008080;
+  color: #e0f2f1;
   text-align: center;
-  flex-direction: column;
+  padding: 15px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 3px solid #004d40;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
-
 

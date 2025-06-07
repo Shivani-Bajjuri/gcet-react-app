@@ -1,59 +1,43 @@
 .header-body {
+  background-color: #008080; /* teal */
+  padding: 20px 40px;
+  color: #e0f2f1; /* pastel teal */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 3px solid #004d40; /* dark teal */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #6A1B9A; /* Zepto Rich Purple */
-  padding: 15px 30px;
-  box-shadow: 0 4px 12px rgba(106, 27, 154, 0.6);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  animation: slideDown 0.5s ease forwards;
 }
 
 .header-title {
-  font-family: 'Amazon Ember', Arial, sans-serif;
-  font-size: 2rem;
-  color: #F3E5F5; /* Lavender Mist */
-  text-shadow: none;
-  cursor: default;
-  user-select: none;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e0f2f1; /* pastel teal */
+  text-shadow: 1px 1px 2px #004d40; /* dark teal shadow */
 }
 
-.header-links {
+.header-nav {
   list-style: none;
   display: flex;
-  gap: 25px;
-  margin: 0;
+  gap: 20px;
   padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
-.header-links li a {
-  color: #FF80AB; /* Vibrant Pink */
+.header-nav li a {
+  color: #f0f4e6; /* pastel green */
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
-  padding: 8px 15px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
-.header-links li a:hover {
-  background-color: rgba(255, 128, 171, 0.2); /* Pink hover bg */
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(255, 128, 171, 0.6);
+.header-nav li a:hover,
+.header-nav li a.active {
+  border-bottom: 3px solid #1e90ff; /* blue underline */
+  color: #1e90ff;
 }
-
-/* Animations */
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-

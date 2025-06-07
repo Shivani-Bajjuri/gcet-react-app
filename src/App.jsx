@@ -4,11 +4,11 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
-import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Logout from "./components/Logout";
 import Header from "./components/Header";
+import Order from "./components/Order";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createContext } from "react";
@@ -35,10 +35,11 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
+            <Route index element={<Product />} />
+            <Route path="/" element={<Product />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
             <Route path="/login" element={<Login />}></Route>
+             <Route path="/order" element={<Order />}></Route>
             <Route path="/logout" element={<Logout />}></Route>
             <Route path="/register" element={<Register />}></Route>
           </Routes>
