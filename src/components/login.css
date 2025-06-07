@@ -60,7 +60,7 @@
 }
 
 .login-container button {
-  width: 100%;
+  width: 50%;
   background: #4a90e2; /* Bright Blue */
   color: #ffffff; /* White */
   border: none;
